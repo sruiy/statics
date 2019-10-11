@@ -1,0 +1,63 @@
+@import "variables";
+
+@font-face {
+  font-family: '@{icomoon-font-family}';
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?u8xy6v');
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?u8xy6v#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?u8xy6v') format('truetype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?u8xy6v') format('woff'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?u8xy6v#@{icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '@{icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add {
+  &:before {
+    content: @icon-add; 
+  }
+}
+.icon-edit {
+  &:before {
+    content: @icon-edit;     
+    color: #303289;
+  }
+}
+.icon-time {
+  &:before {
+    content: @icon-time; 
+  }
+}
+.icon-preview {
+  &:before {
+    content: @icon-preview;     
+    color: #00a0e9;
+  }
+}
+.icon-share {
+  &:before {
+    content: @icon-share; 
+  }
+}
+.icon-delete {
+  &:before {
+    content: @icon-delete;     
+    color: #102e8e;
+  }
+}
+
